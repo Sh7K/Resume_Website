@@ -25,6 +25,10 @@ $("document").ready(function () {
             'transform': 'translateX(-200px)'
         });
     });
+
+    $('li').click(function() {
+        this.onclick=function(){}
+    });
 });
 
 $('body').click(function() {
