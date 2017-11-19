@@ -25,4 +25,22 @@ $("document").ready(function () {
               'transform': 'translateX(-200px)'
           });
       });
+    
+      $("body").click(function(e){
+        let myTarget = $(".nav");
+        let clicked = e.target.className;
+        if(clicked!="")
+        {
+            $('.nav').css({
+                'transform': 'translateX(-200px)'
+            });
+        }
+      /*  if($.trim(myTarget[0]) != '') {
+            if($("." + myTarget[0]) != clicked) {
+                $('.nav').css({
+                    'transform': 'translateX(-200px)'
+                });
+            }
+        }*/
+      });
   });
